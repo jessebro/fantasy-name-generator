@@ -21,19 +21,20 @@ wimblebean = (
     "Gildebran",
     "Javic",
     "Jebus",
+    "Kayu",
     "Kendor",
     "Khiln",
     "Layal",
     "Leifen",
     "Lenn",
     "Luin",
+    "Lumeus",
     "Marlo",
     "Mardon",
     "Mastalay",
     "Mayin",
     "Micha",
     "Perel",
-    "Porlor",
     "Reiner",
     "Renan",
     "Rindel",
@@ -48,7 +49,8 @@ wimblebean = (
     "Tielek",
     "Tilamir",
     "Tilo",
-    "Tirindek"
+    "Tirindek",
+    "Vandimar"
     )
 
 pepper = (
@@ -136,34 +138,44 @@ def main(names):
             names = reset()
         # print(f"There are {len(names['male'])} male names left and {len(names['female'])} female names left.")
         gender = input("""What gender is the character? 
-        - type 'm' for male
-        - type 'f' for female
-        - type 'r' to reset the lists
-        - type 'x' to exit
-        > """)
-        if gender == "m":
-            malechoice = choice(names['male'])
-            familychoice = choice(names['family'])
-            print(f"""
-            
-            ~{malechoice + " " + familychoice}~
-            
-            """)
-            names['male'].remove(malechoice)
-            names['family'].remove(familychoice)
-
-        elif gender == "f":
-            femalechoice = choice(names['female'])
-            familychoice = choice(names['family'])
-            print(f"""
-            
-            ~{femalechoice + " " + familychoice}~
-            
-            """)
-            names['female'].remove(femalechoice)
-            names['family'].remove(familychoice)
-        elif gender == "r":
-            names = reset()
+    - type 'm' for male
+    - type 'f' for female
+    - type 'r' to reset the lists
+    - type 'x' to exit
+> """)
+        generate(names, gender)
 
 
-main(reset())
+def generate(names, gender):
+
+    if gender == "m":
+        malechoice = choice(names['male'])
+        familychoice = choice(names['family'])
+        finalname = f"""
+
+                ~{malechoice + " " + familychoice}~
+
+                """
+        print(finalname)
+        names['male'].remove(malechoice)
+        names['family'].remove(familychoice)
+        return finalname
+
+    elif gender == "f":
+        femalechoice = choice(names['female'])
+        familychoice = choice(names['family'])
+        finalname = f"""
+
+                ~{femalechoice + " " + familychoice}~
+
+                """
+        print(finalname)
+        names['female'].remove(femalechoice)
+        names['family'].remove(familychoice)
+        return finalname
+    elif gender == "r":
+        names = reset()
+
+
+if __name__ == '__main__':
+    main(reset())
