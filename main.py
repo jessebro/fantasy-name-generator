@@ -8,6 +8,7 @@ wimblebean = (
     "Atyn",
     "Axran",
     "Bertholt",
+    "Caylen",
     "Dowrin",
     "Eladris",
     "Elis",
@@ -16,6 +17,7 @@ wimblebean = (
     "Erwin",
     "Fagor",
     "Garurt",
+    "Gejin",
     "Gildebran",
     "Javic",
     "Jebus",
@@ -94,17 +96,23 @@ peggy = (
     "Cinderfell",
     "Darastrix",
     "Eringard",
+    "Firemoon",
+    "Helzak",
     "Jadefall",
     "Kadoran",
+    "Kindleberry",
     "Kylengard",
     "Laven",
     "Lilyfoot",
     "Mandreiga",
     "Omar",
+    "Polbar",
     "Rener",
     "Stellagard",
     "Silvermere",
     "Swallowtail",
+    "Tenah",
+    "Tyberan",
     "Ymbise",
     "Zekerane"
 )
@@ -122,7 +130,7 @@ def reset():
 def main(names):
     gender = ""
     while gender != "x":
-        if len(names['male']) == 0 or len(names['female']) == 0:
+        if len(names['male']) == 0 or len(names['female']) == 0 or len(names['family']) == 0:
             names = reset()
         # print(f"There are {len(names['male'])} male names left and {len(names['female'])} female names left.")
         gender = input("""What gender is the character? 
