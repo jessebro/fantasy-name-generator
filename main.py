@@ -46,6 +46,7 @@ wimblebean = (
     "Tayle",
     "Thorin",
     "Tielek",
+    "Tilamir",
     "Tilo",
     "Tirindek"
     )
@@ -93,6 +94,7 @@ peggy = (
     "Ashroot",
     "Avary",
     "Beifanger",
+    "Caldamire",
     "Cinderfell",
     "Darastrix",
     "Eringard",
