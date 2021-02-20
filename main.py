@@ -1,6 +1,6 @@
 from random import choice
 
-wimblebean = (
+male_names = (
     "Alander",
     "Aldath",
     "Alvyn",
@@ -53,7 +53,7 @@ wimblebean = (
     "Vandimar"
     )
 
-pepper = (
+female_names = (
     "Aethila",
     "Amber",
     "Amli",
@@ -61,6 +61,7 @@ pepper = (
     "Atra",
     "Cassala",
     "Chana",
+    "Cilanna",
     "Dandela",
     "Elira",
     "Erakoda",
@@ -90,7 +91,7 @@ pepper = (
     "Yemir"
 )
 
-peggy = (
+family_names = (
     "Alahin",
     "Alyton",
     "Ashroot",
@@ -101,6 +102,7 @@ peggy = (
     "Darastrix",
     "Eringard",
     "Firemoon",
+    "Glimmerwood",
     "Helzak",
     "Jadefall",
     "Kadoran",
@@ -124,9 +126,9 @@ peggy = (
 
 def reset():
     names = {
-        "male": list(wimblebean),
-        "female": list(pepper),
-        "family": list(peggy)
+        "male": list(male_names),
+        "female": list(female_names),
+        "family": list(family_names)
     }
     return names
 
