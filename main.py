@@ -178,6 +178,11 @@ def generate(names, gender):
     elif gender == "r":
         names = reset()
 
+    elif gender == "l":
+        print(f"""MALE      {male_names}  
+    FEMALE      {female_names} 
+    FAMILY      {family_names}""")
+
 
 if __name__ == '__main__':
     main(reset())
