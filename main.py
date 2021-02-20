@@ -28,7 +28,6 @@ male_names = (
     "Leifen",
     "Lenn",
     "Luin",
-    "Lumeus",
     "Marlo",
     "Mardon",
     "Mastalay",
