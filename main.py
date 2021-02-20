@@ -143,6 +143,7 @@ def main(names):
     - type 'm' for male
     - type 'f' for female
     - type 'r' to reset the lists
+    - type 'l' to display the name pool
     - type 'x' to exit
 > """)
         generate(names, gender)
@@ -179,9 +180,12 @@ def generate(names, gender):
         names = reset()
 
     elif gender == "l":
-        print(f"""MALE      {male_names}  
-    FEMALE      {female_names} 
-    FAMILY      {family_names}""")
+        print(f"""
+    
+    ~MALE~        {male_names}  
+    ~FEMALE~      {female_names} 
+    ~FAMILY~      {family_names}
+    """)
 
 
 if __name__ == '__main__':
