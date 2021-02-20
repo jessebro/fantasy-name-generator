@@ -71,7 +71,7 @@ female_names = (
     "Erakoda",
     "Erlda",
     "Feretta",
-    "Gwilafeir",
+    "Gwilafeyir",
     "Hilda",
     "Iris",
     "Isich",
