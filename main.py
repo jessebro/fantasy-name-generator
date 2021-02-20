@@ -180,12 +180,15 @@ def generate(names, gender):
         names = reset()
 
     elif gender == "l":
-        print(f"""
+        display = f"""
     
-    ~MALE~        {male_names}  
-    ~FEMALE~      {female_names} 
-    ~FAMILY~      {family_names}
-    """)
+~MALE~        {male_names}  
+
+~FEMALE~      {female_names} 
+
+~FAMILY~      {family_names}
+    """
+        return display
 
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@ async def female(ctx):
 
 
 @client.command()
-async def list(ctx):
+async def display(ctx):
 	await ctx.send(main.generate(main.reset(), "l"))
 
 
