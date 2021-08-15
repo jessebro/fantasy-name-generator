@@ -7,6 +7,7 @@ male_names = (
     "Andra",
     "Atyn",
     "Axran",
+    "Beralt",
     "Bertholt",
     "Caylen",
     "Dowrin",
